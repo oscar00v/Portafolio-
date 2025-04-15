@@ -1,0 +1,79 @@
+.aboutme-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    color: #fff;
+    padding: 1rem;
+  
+    .description {
+      h1 {
+        font-size: 2.5rem;
+        font-weight: bold;
+        color: #fff;
+      }
+  
+      .divider {
+        height: 4px;
+        width: 40px;
+        background-color: #ffb400;
+        margin: 0.5rem 0 1rem 0;
+        border-radius: 5px;
+      }
+  
+      p {
+        font-size: 1.5rem;
+        color: #d4d4d4;
+        line-height: 1.6;
+        margin-bottom: 1rem;
+      }
+    }
+  
+    .what-im-doing {
+      h2 {
+        font-size: 2rem;
+        font-weight: bold;
+        color: #fff;
+        margin-bottom: 1.5rem;
+      }
+  
+      .cards-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 1.5rem;
+      }
+  
+      .service-card {
+        background-color: #1a1a1a;
+        padding: 1.5rem;
+        border-radius: 1rem;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+        transition: background-color 0.3s ease;
+        border: 1px solid #2e2e2e;
+  
+        &:hover {
+          background-color: #292929;
+        }
+  
+        .icon {
+          font-size: 2rem;
+          color: #ffb400;
+          margin-bottom: 1rem;
+          display: inline-block;
+        }
+  
+        h3 {
+          font-size: 1.2rem;
+          font-weight: bold;
+          margin-bottom: 0.5rem;
+          color: #fff;
+        }
+  
+        p {
+          color: #ccc;
+          font-size: 1.10rem;
+          line-height: 1.4;
+        }
+      }
+    }
+  }
+  

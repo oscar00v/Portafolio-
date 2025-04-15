@@ -1,0 +1,32 @@
+*{
+  margin: 0;
+}
+
+.app-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 2rem;
+    gap: 2rem;
+    background-color: #0f0f0f;
+    min-height: 100vh;
+  }
+  
+  /* Lado izquierdo (Home / perfil) */
+  .profile {
+    flex-shrink: 0;
+  }
+  
+  /* Lado derecho (contenido, incluyendo el navbar) */
+  .main-content {
+    flex: 1;
+    position: relative;
+    background-color: #1a1a1a;
+    padding: 2rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    color: #cbcbcb;
+
+}
+  
+  
