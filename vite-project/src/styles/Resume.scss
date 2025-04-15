@@ -1,0 +1,108 @@
+.resume-container {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 2rem;
+    color: #fff;
+  
+    .header {
+      h1 {
+        font-size: 2.5rem;
+        font-weight: bold;
+        color: #fff;
+      }
+  
+      .divider {
+        height: 4px;
+        width: 40px;
+        background-color: #ffb400;
+        margin-top: 0.5rem;
+        border-radius: 5px;
+      }
+    }
+  
+    .resume-section {
+      position: static;
+      padding-left: 2.5rem;
+  
+      .section-icon {
+        position: static;
+        left: 0;
+        top: 0.25rem;
+        font-size: 1.5rem;
+        background-color: #1a1a1a;
+        border: 1px solid #2e2e2e;
+        border-radius: 30%;
+        width: 2.5rem;
+        height: 2.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+      }
+  
+      h2 {
+        font-size: 1.8rem;
+        font-weight: bold;
+        margin-bottom: 2rem;
+        color: #fff;
+      }
+  
+      .timeline {
+        border-left: 2px solid #2e2e2e;
+        padding-left: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+  
+        .timeline-item {
+          position: relative;
+  
+          &::before {
+            content: '';
+            position: absolute;
+            left: -1.3rem;
+            top: 0.2rem;
+            width: 16px;
+            height: 16px;
+            background-color: #2e2e2e; // Fondo gris oscuro
+            border-radius: 30%;
+            z-index: 0; // Capa de fondo
+          }
+          
+          &::after {
+            content: '';
+            position: absolute;
+            left: -1.1rem;
+            top: 0.40rem;
+            width: 10px;
+            height: 10px;
+            background-color: #ffb400; // Punto amarillo
+            border-radius: 50%;
+            z-index: 1; // Encima del fondo gris
+          }
+  
+          h3 {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-bottom: 0.3rem;
+            color: #fff;
+          }
+  
+          .date {
+            font-size: 0.95rem;
+            color: #ffb400;
+            display: block;
+            margin-bottom: 0.5rem;
+          }
+  
+          p {
+            font-size: 0.95rem;
+            color: #c2c2c2;
+            line-height: 1.5;
+          }
+        }
+      }
+    }
+  }
+  
