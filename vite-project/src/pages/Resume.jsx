@@ -10,7 +10,7 @@ function Resume() {
       </section>
       {/* Experiencia */}
       <section className="resume-section">
-        <div className="section-icon">💼</div>
+        <divnp className="section-icon">💼</divnp>
         <h2>Experience</h2>
         <div className="timeline">
           <div className="timeline-item">
